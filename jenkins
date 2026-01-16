@@ -6,8 +6,8 @@ pipeline {
         stage('Checkout') {
             steps {
                 git branch: 'main',
-                credentialsId: 'randompipe',
-                url: 'https://github.com/Piyush-patra/privatespringrepo.git'
+                 credentialsId: 'huihui',
+                  url: 'https://github.com/Piyush-patra/privatespringrepo.git'
             }
         }
 
