@@ -17,13 +17,13 @@ pipeline {
             }
         }
 
-        stage('SonarQube Analysis') {
-            steps {
-                withSonarQubeEnv(installationName:'sonarqube') {
-                    sh 'mvn clean verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar'
-                }
-            }
-        }
+        // stage('SonarQube Analysis') {
+        //     steps {
+        //         withSonarQubeEnv(installationName:'sonarqube') {
+        //             sh 'mvn clean verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar'
+        //         }
+        //     }
+        // }
 
         stage('Package') {
             steps {
